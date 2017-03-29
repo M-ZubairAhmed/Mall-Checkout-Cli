@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="922ea199-789c-42d9-a14e-c8e5b14a8bce" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/mastermindapps/DataTypes/Categories.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/mastermindapps/DataTypes/Items.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/mastermindapps/Categories.java" afterPath="$PROJECT_DIR$/src/com/mastermindapps/Categories.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,13 +14,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CSVReader.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CSVReader.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/mastermindapps/CSVReader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="486">
-              <caret line="21" column="49" lean-forward="false" selection-start-line="21" selection-start-column="49" selection-end-line="21" selection-end-column="49" />
+            <state relative-caret-position="378">
+              <caret line="14" column="6" lean-forward="true" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Categories.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/mastermindapps/Categories.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="576">
+              <caret line="48" column="0" lean-forward="true" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+              <folding>
+                <element signature="docComment;method#Categories#0;class#Categories#0" expanded="false" />
+                <element signature="docComment;method#getCategoryName#0;class#Categories#0" expanded="false" />
+                <element signature="docComment;method#getCategoryParent#0;class#Categories#0" expanded="false" />
+                <element signature="docComment;method#getDiscount#0;class#Categories#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -46,6 +60,7 @@
         <option value="$PROJECT_DIR$/src/com/mastermindapps/CSVReader.java" />
         <option value="$PROJECT_DIR$/src/com/mastermindapps/Items.java" />
         <option value="$PROJECT_DIR$/src/com/mastermindapps/DataTypes/Categories.java" />
+        <option value="$PROJECT_DIR$/src/com/mastermindapps/Categories.java" />
       </list>
     </option>
   </component>
@@ -291,10 +306,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/mastermindapps/CSVReader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="21" column="49" lean-forward="false" selection-start-line="21" selection-start-column="49" selection-end-line="21" selection-end-column="49" />
+        <state relative-caret-position="378">
+          <caret line="14" column="6" lean-forward="true" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mastermindapps/Categories.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="48" column="0" lean-forward="true" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+          <folding>
+            <element signature="docComment;method#Categories#0;class#Categories#0" expanded="false" />
+            <element signature="docComment;method#getCategoryName#0;class#Categories#0" expanded="false" />
+            <element signature="docComment;method#getCategoryParent#0;class#Categories#0" expanded="false" />
+            <element signature="docComment;method#getDiscount#0;class#Categories#0" expanded="false" />
           </folding>
         </state>
       </provider>
