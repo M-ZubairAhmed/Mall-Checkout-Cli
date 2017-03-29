@@ -4,8 +4,15 @@ import java.util.ArrayList;
 
 public class InventoryData {
 
+    //    arraylist to store inventory data in global scope
     private ArrayList<Inventory> arrayList = new ArrayList<>();
 
+    /**
+     * Parses string[] arraylist of inventory to arraylist of inventory type.
+     *
+     * @param file String[] arraylist from CSVReader
+     * @return arraylist of Inventory datatype
+     */
     ArrayList<Inventory> getInventoryArray(ArrayList<String[]> file) {
         for (String[] element : file) {
             int id = Integer.valueOf(element[0]);
@@ -16,6 +23,15 @@ public class InventoryData {
         }
         return arrayList;
     }
+
+    /**
+     * TODO patch this in main
+     * @param id
+     * @param brand
+     * @param category
+     * @param price
+     * @return
+     */
 
     boolean addPricing(int id, String brand, String category, int price) {
         boolean added;
