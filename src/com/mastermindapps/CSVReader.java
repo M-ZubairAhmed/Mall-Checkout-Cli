@@ -9,6 +9,9 @@ import java.util.ArrayList;
 public class CSVReader {
 
     /**
+     * Reads the csv file line by line. Each line is in turned split into elements based on comma.
+     * All elements of single line stored in single index of string array. All such parsed lines are
+     * inturn stored in to an array list.
      * @param path takes the local address path of csv file.
      * @return the arraylist of string[] read from csv file, where individual index has one line.
      */
@@ -41,5 +44,19 @@ public class CSVReader {
             }
         }
         return fileArray;
+    }
+
+    /**
+     * This method takes individual element of the line and remove leading and trailing spaces. It also makes the test into all caps for easy accessibility accross code.
+     * @param line the individual line parsed by reader containing in its array are seperated words/element
+     * @param size size of the line containing string elements.
+     * @return string array corresponding to each line.
+     */
+    private String[] cleanElements(String[] line, int size) {
+        String[] cleanedLine = new String[size];
+        for (int i = 0; i < size; i++) {
+            cleanedLine[i] = line[i].trim().toUpperCase();
+        }
+        return cleanedLine;
     }
 }
