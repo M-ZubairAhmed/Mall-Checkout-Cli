@@ -31,8 +31,11 @@ class CSVReader {
             }
         } catch (FileNotFoundException fnfE) {
             System.out.println("Error! File cannot be found on disk");
+            System.exit(0);
         } catch (IOException ioE) {
             System.out.println("Error! File cannot be read");
+            System.exit(0);
+
         } finally {
             try {
                 if (bufferedReader != null) {
@@ -42,6 +45,8 @@ class CSVReader {
                 }
             } catch (IOException ioE) {
                 System.out.println("Error! File reader cannot be closed");
+                System.exit(0);
+
             }
         }
         return fileArray;
