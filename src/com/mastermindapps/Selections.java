@@ -29,8 +29,8 @@ class Selections {
 
     private void loadCollections() {
         CSVReader csvReader = new CSVReader();
-        ArrayList<String[]> pricingFile = csvReader.readFromDisk("src\\com\\mastermindapps\\storePricingSheet.csv");
-        ArrayList<String[]> brandFile = csvReader.readFromDisk("src\\com\\mastermindapps\\brandsSheet.csv");
+        ArrayList<String[]> pricingFile = csvReader.readFromDisk("C:\\Users\\zub\\Documents\\GitHub\\Mall-Checkout-System\\src\\com\\mastermindapps\\CSVs\\storePricingSheet.csv");
+        ArrayList<String[]> brandFile = csvReader.readFromDisk("C:\\Users\\zub\\Documents\\GitHub\\Mall-Checkout-System\\src\\com\\mastermindapps\\CSVs\\brandsSheet.csv");
 
         BrandsData brandsData = new BrandsData();
         brandSet = brandsData.getBrandsSet(brandFile);

@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="922ea199-789c-42d9-a14e-c8e5b14a8bce" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/mastermindapps/CSVReader.java" afterPath="$PROJECT_DIR$/src/com/mastermindapps/CSVReader.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/mastermindapps/Main.java" afterPath="$PROJECT_DIR$/src/com/mastermindapps/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/mastermindapps/Selections.java" afterPath="$PROJECT_DIR$/src/com/mastermindapps/Selections.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,21 +15,6 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CSVReader.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/mastermindapps/CSVReader.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="36" column="27" lean-forward="false" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="27" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="docComment;method#readFromDisk#0;class#CSVReader#0" expanded="false" />
-                <element signature="docComment;method#cleanElements#0;class#CSVReader#0" expanded="false" />
-                <element signature="method#cleanElements#0;class#CSVReader#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="CategoriesData.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/mastermindapps/CategoriesData.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -42,15 +25,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Selections.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Selections.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/mastermindapps/Selections.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="43" lean-forward="false" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
+            <state relative-caret-position="272">
+              <caret line="16" column="45" lean-forward="true" selection-start-line="16" selection-start-column="45" selection-end-line="16" selection-end-column="45" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2043#2044#0" expanded="true" />
-                <element signature="e#2098#2099#0" expanded="true" />
+                <element signature="e#2169#2170#0" expanded="true" />
+                <element signature="e#2224#2225#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -133,9 +116,9 @@
         <option value="$PROJECT_DIR$/src/com/mastermindapps/Inventory.java" />
         <option value="$PROJECT_DIR$/src/com/mastermindapps/InventoryData.java" />
         <option value="$PROJECT_DIR$/src/com/mastermindapps/CategoriesData.java" />
-        <option value="$PROJECT_DIR$/src/com/mastermindapps/Selections.java" />
         <option value="$PROJECT_DIR$/src/com/mastermindapps/Main.java" />
         <option value="$PROJECT_DIR$/src/com/mastermindapps/CSVReader.java" />
+        <option value="$PROJECT_DIR$/src/com/mastermindapps/Selections.java" />
       </list>
     </option>
   </component>
@@ -432,14 +415,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/mastermindapps/CategoriesData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" column="27" lean-forward="false" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/mastermindapps/Inventory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -464,18 +439,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/mastermindapps/Selections.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="43" lean-forward="false" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2043#2044#0" expanded="true" />
-            <element signature="e#2098#2099#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/mastermindapps/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="561">
@@ -488,13 +451,33 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/mastermindapps/CSVReader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="36" column="27" lean-forward="false" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="27" />
+        <state relative-caret-position="119">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="docComment;method#readFromDisk#0;class#CSVReader#0" expanded="false" />
             <element signature="docComment;method#cleanElements#0;class#CSVReader#0" expanded="false" />
             <element signature="method#cleanElements#0;class#CSVReader#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mastermindapps/CategoriesData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="27" lean-forward="false" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mastermindapps/Selections.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="45" lean-forward="true" selection-start-line="16" selection-start-column="45" selection-end-line="16" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2169#2170#0" expanded="true" />
+            <element signature="e#2224#2225#0" expanded="true" />
           </folding>
         </state>
       </provider>
