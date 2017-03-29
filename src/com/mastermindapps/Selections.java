@@ -3,7 +3,7 @@ package com.mastermindapps;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-public class Selections {
+class Selections {
 
     private HashMap brandSet;
     private HashMap categorySet;
@@ -28,7 +28,6 @@ public class Selections {
     }
 
     private void loadCollections() {
-
         CSVReader csvReader = new CSVReader();
         ArrayList<String[]> pricingFile = csvReader.readFromDisk("src\\com\\mastermindapps\\storePricingSheet.csv");
         ArrayList<String[]> brandFile = csvReader.readFromDisk("src\\com\\mastermindapps\\brandsSheet.csv");
@@ -44,7 +43,6 @@ public class Selections {
     }
 
     private int maxDiscount(String brand, String category) {
-
         int brandDiscount = Integer.valueOf(brandSet.get(brand).toString());
         int categoryDiscount = Integer.valueOf(categorySet.get(category).toString());
         if (brandDiscount > categoryDiscount) {
@@ -59,7 +57,6 @@ public class Selections {
     }
 
     void showChoices() {
-
         String id = "Id";
         String brand = "Brand";
         String category = "Category";

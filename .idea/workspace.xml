@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="922ea199-789c-42d9-a14e-c8e5b14a8bce" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/mastermindapps/Selections.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/mastermindapps/Main.java" afterPath="$PROJECT_DIR$/src/com/mastermindapps/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/mastermindapps/Selections.java" afterPath="$PROJECT_DIR$/src/com/mastermindapps/Selections.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,15 +25,27 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Selections.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Selections.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/mastermindapps/Selections.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="29" lean-forward="false" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+            <state relative-caret-position="323">
+              <caret line="19" column="43" lean-forward="false" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2052#2053#0" expanded="true" />
-                <element signature="e#2107#2108#0" expanded="true" />
+                <element signature="e#2043#2044#0" expanded="true" />
+                <element signature="e#2098#2099#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/mastermindapps/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="19" lean-forward="true" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -82,11 +94,13 @@
       <find>Category</find>
       <find>Inventory</find>
       <find>Inventories</find>
+      <find>FinalPrice</find>
     </findStrings>
     <replaceStrings>
       <replace>Categories</replace>
       <replace>Inventories</replace>
       <replace>Inventory</replace>
+      <replace>Selections</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -104,6 +118,7 @@
         <option value="$PROJECT_DIR$/src/com/mastermindapps/InventoryData.java" />
         <option value="$PROJECT_DIR$/src/com/mastermindapps/CategoriesData.java" />
         <option value="$PROJECT_DIR$/src/com/mastermindapps/Selections.java" />
+        <option value="$PROJECT_DIR$/src/com/mastermindapps/Main.java" />
       </list>
     </option>
   </component>
@@ -291,6 +306,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="22" width="1684" height="1036" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16281895" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -442,12 +458,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/mastermindapps/Selections.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="29" lean-forward="false" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+        <state relative-caret-position="323">
+          <caret line="19" column="43" lean-forward="false" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2052#2053#0" expanded="true" />
-            <element signature="e#2107#2108#0" expanded="true" />
+            <element signature="e#2043#2044#0" expanded="true" />
+            <element signature="e#2098#2099#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mastermindapps/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="19" lean-forward="true" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
