@@ -1,20 +1,20 @@
 package com.mastermindapps;
 
-class Items {
+class Inventory {
     private int id;
     private String brandName;
     private String category;
     private int price;
 
     /**
-     * Constructor for Items class.
+     * Constructor for Inventory class.
      *
      * @param id        int value for the row number of the inventory list.
      * @param brandName string value of the brand name.
      * @param category  string value of the category.
      * @param price     integer value of the original pre discount price of the item.
      */
-    Items(int id, String brandName, String category, int price) {
+    Inventory(int id, String brandName, String category, int price) {
         this.id = id;
         this.brandName = brandName;
         this.category = category;
