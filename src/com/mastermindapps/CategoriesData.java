@@ -22,6 +22,9 @@ class CategoriesData {
         return hashMap;
     }
 
+    /**
+     * Manually input of category data in arraylist.
+     */
     private void addStoredCategories() {
         arrayList.add(new Categories("MEN\'S WEAR", null, 0));
         arrayList.add(new Categories("SHIRTS", "MEN\'S WEAR", 0));
@@ -33,6 +36,13 @@ class CategoriesData {
         arrayList.add(new Categories("FOOTWEAR", "WOMEN\'S WEAR", 0));
     }
 
+    /**
+     * Key is checked in the arraylist to retrieve corresponding discount value. Search follows going through
+     * category and category all the way reaching to root of categories.
+     *
+     * @param searchCategory key which is searched for in arraylist of categories
+     * @return max discount value in the category hierarchy.
+     */
     private int maxCategoryDiscount(String searchCategory) {
         int maxDiscount = 0;
         int i = 0;
@@ -54,6 +64,14 @@ class CategoriesData {
         return maxDiscount;
     }
 
+    /**
+     * TODO add later and patch in main
+     *
+     * @param categoryName
+     * @param categoryParent
+     * @param discount
+     * @return
+     */
     boolean addNewCategory(String categoryName, String categoryParent, int discount) {
         boolean added;
         try {
