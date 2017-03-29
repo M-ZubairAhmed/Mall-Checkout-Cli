@@ -6,7 +6,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 
-public class CSVReader {
+class CSVReader {
 
     /**
      * Reads the csv file line by line. Each line is in turned split into elements based on comma.
@@ -16,7 +16,7 @@ public class CSVReader {
      * @param path takes the local address path of csv file.
      * @return the arraylist of string[] read from csv file, where individual index has one line.
      */
-    protected ArrayList<String[]> readFromDisk(String path) {
+    ArrayList<String[]> readFromDisk(String path) {
         //Initialzing the arraylist to store read csv file.
         ArrayList<String[]> fileArray = new ArrayList<>();
         //Initializing bufferedreader to null also to increase its scope.
