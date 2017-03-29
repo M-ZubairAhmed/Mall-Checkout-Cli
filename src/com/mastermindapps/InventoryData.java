@@ -2,7 +2,7 @@ package com.mastermindapps;
 
 import java.util.ArrayList;
 
-public class InventoryData {
+class InventoryData {
 
     //    arraylist to store inventory data in global scope
     private ArrayList<Inventory> arrayList = new ArrayList<>();
