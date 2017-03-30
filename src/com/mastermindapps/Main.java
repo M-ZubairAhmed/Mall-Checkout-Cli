@@ -1,3 +1,6 @@
+/**
+ * 
+ */
 package com.mastermindapps;
 
 import java.util.HashMap;

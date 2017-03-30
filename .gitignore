@@ -67,3 +67,7 @@ $RECYCLE.BIN/
 .idea/workspace.xml
 .idea/workspace.xml
 *.xml
+*.xml
+.idea/vcs.xml
+*.xml
+*.html
