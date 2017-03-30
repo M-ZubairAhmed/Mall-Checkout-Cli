@@ -25,7 +25,7 @@ class Choices {
         System.out.println("Enter number of customers");
         int numberOfCustomers = getNumberOfCustomer();
         for (int i = 0; i < numberOfCustomers; i++) {
-            System.out.println("\n\nEnter choices of customer no. " + (i + 1) + "\nTo complete order enter \'X\'");
+            System.out.println("\n\nEnter choices of customer no. " + (i + 1) + "\n(Or) To complete order enter \'X\'");
             int sum = getTotalPrice();
             System.out.println("Customer No." + (i + 1) + " Total: Rs." + sum + "/-");
         }
@@ -41,7 +41,7 @@ class Choices {
     private int getNumberOfCustomer() throws InputMismatchException {
         Scanner scanner = new Scanner(System.in);
         int numberOfCustomers = 0;
-        boolean flagNumberOfCustomers = true;
+        boolean flagNumberOfCustomers = true; //For looping when invalid character is entered
         while (flagNumberOfCustomers) {
             try {
                 numberOfCustomers = scanner.nextInt();
@@ -81,7 +81,7 @@ class Choices {
         try {
             return Integer.valueOf((finalPriceMap.get(selectedID)).toString());
         } catch (NullPointerException npE) {
-            int selectionRange = finalPriceMap.size();
+            int selectionRange = finalPriceMap.size();  //For displaying valid selection range.
             System.out.println("ERROR! Please select valid choice from 1 to " + selectionRange);
             return 0;
         }
