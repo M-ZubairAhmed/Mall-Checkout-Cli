@@ -6,9 +6,9 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        Selections selections = new Selections();
-        HashMap inventorySet = selections.getSelectionSet();
-        selections.showChoices();
+        FinalPrice finalPrice = new FinalPrice();
+        HashMap inventorySet = finalPrice.getFinalPrices();
+        finalPrice.displayFinalPriceChoices();
 
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter number of customers");

@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="922ea199-789c-42d9-a14e-c8e5b14a8bce" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/mastermindapps/Choice.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/mastermindapps/Selections.java" afterPath="$PROJECT_DIR$/src/com/mastermindapps/FinalPrice.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/mastermindapps/Selections.java" afterPath="$PROJECT_DIR$/src/com/mastermindapps/Selections.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/mastermindapps/Choice.java" afterPath="$PROJECT_DIR$/src/com/mastermindapps/Choice.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/mastermindapps/InventoryData.java" afterPath="$PROJECT_DIR$/src/com/mastermindapps/InventoryData.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/mastermindapps/Main.java" afterPath="$PROJECT_DIR$/src/com/mastermindapps/Main.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -41,13 +43,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Selections.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/mastermindapps/Selections.java">
+      <file leaf-file-name="FinalPrice.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/mastermindapps/FinalPrice.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="557">
-              <caret line="41" column="52" lean-forward="true" selection-start-line="41" selection-start-column="52" selection-end-line="41" selection-end-column="52" />
+            <state relative-caret-position="165">
+              <caret line="21" column="124" lean-forward="false" selection-start-line="21" selection-start-column="124" selection-end-line="21" selection-end-column="124" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#2464#2465#0" expanded="true" />
+                <element signature="e#2519#2520#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -56,8 +60,8 @@
       <file leaf-file-name="Choice.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/mastermindapps/Choice.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="104">
-              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+            <state relative-caret-position="390">
+              <caret line="15" column="28" lean-forward="false" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -67,7 +71,7 @@
         <entry file="file://$PROJECT_DIR$/src/com/mastermindapps/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="170">
-              <caret line="10" column="33" lean-forward="true" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
+              <caret line="10" column="46" lean-forward="true" selection-start-line="10" selection-start-column="46" selection-end-line="10" selection-end-column="46" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -78,8 +82,8 @@
       <file leaf-file-name="InventoryData.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/mastermindapps/InventoryData.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+            <state relative-caret-position="884">
+              <caret line="40" column="0" lean-forward="true" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -138,13 +142,14 @@
         <option value="$PROJECT_DIR$/src/com/mastermindapps/BrandsData.java" />
         <option value="$PROJECT_DIR$/src/com/mastermindapps/Items.java" />
         <option value="$PROJECT_DIR$/src/com/mastermindapps/Inventory.java" />
-        <option value="$PROJECT_DIR$/src/com/mastermindapps/InventoryData.java" />
         <option value="$PROJECT_DIR$/src/com/mastermindapps/Main.java" />
         <option value="$PROJECT_DIR$/src/com/mastermindapps/CSVReader.java" />
         <option value="$PROJECT_DIR$/src/com/mastermindapps/CategoriesData.java" />
         <option value="$PROJECT_DIR$/src/com/mastermindapps/Selections.java" />
         <option value="$PROJECT_DIR$/src/com/mastermindapps/Display.java" />
         <option value="$PROJECT_DIR$/src/com/mastermindapps/Choice.java" />
+        <option value="$PROJECT_DIR$/src/com/mastermindapps/InventoryData.java" />
+        <option value="$PROJECT_DIR$/src/com/mastermindapps/FinalPrice.java" />
       </list>
     </option>
   </component>
@@ -369,7 +374,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32912722" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16164052" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16164052" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32912722" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -436,12 +441,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/mastermindapps/Selections.java">
+    <entry file="file://$PROJECT_DIR$/src/com/mastermindapps/FinalPrice.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="680">
           <caret line="40" column="47" lean-forward="false" selection-start-line="40" selection-start-column="47" selection-end-line="40" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2464#2465#0" expanded="true" />
+            <element signature="e#2519#2520#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -513,14 +520,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/mastermindapps/InventoryData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/mastermindapps/CSVReader.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -551,27 +550,37 @@
     <entry file="file://$PROJECT_DIR$/src/com/mastermindapps/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
-          <caret line="10" column="33" lean-forward="true" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
+          <caret line="10" column="46" lean-forward="true" selection-start-line="10" selection-start-column="46" selection-end-line="10" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/mastermindapps/Choice.java">
+    <entry file="file://$PROJECT_DIR$/src/com/mastermindapps/InventoryData.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+        <state relative-caret-position="884">
+          <caret line="40" column="0" lean-forward="true" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/mastermindapps/Selections.java">
+    <entry file="file://$PROJECT_DIR$/src/com/mastermindapps/Choice.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="557">
-          <caret line="41" column="52" lean-forward="true" selection-start-line="41" selection-start-column="52" selection-end-line="41" selection-end-column="52" />
+        <state relative-caret-position="390">
+          <caret line="15" column="28" lean-forward="false" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mastermindapps/FinalPrice.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="21" column="124" lean-forward="false" selection-start-line="21" selection-start-column="124" selection-end-line="21" selection-end-column="124" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2464#2465#0" expanded="true" />
+            <element signature="e#2519#2520#0" expanded="true" />
           </folding>
         </state>
       </provider>

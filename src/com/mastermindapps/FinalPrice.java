@@ -3,12 +3,11 @@ package com.mastermindapps;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-class Selections {
+class FinalPrice {
 
     private HashMap brandSet;
     private HashMap categorySet;
     private ArrayList<Inventory> pricingArray;
-    private ArrayList<String> displayChoiceArray = new ArrayList<>();
 
     /**
      * This method works calls loadCollection method, which returns populated pricing arraylist.
@@ -17,30 +16,22 @@ class Selections {
      *
      * @return hashmap of index and price post max discount pair.
      */
-    HashMap getSelectionSet() {
-        /*
-        loadCollections method is called initially to instantiate classes and collections required by this
-        method.
-         */
-        loadCollections();
+    HashMap getFinalPrices() {
+        loadCollections(); //loads classes and methods required by this class.
 
-        HashMap<Integer, Integer> hashMap = new HashMap<>();//This map will store Id and final post discount price.
-
+        HashMap<Integer, Integer> hashMap = new HashMap<>();//This map will store Id and final post discount price of items.
         for (Inventory item : pricingArray) {
-
             String brandName = item.getBrandName();
             String category = item.getCategory();
             int finalDiscount = getDiscountMaxFrom(brandName, category);
 
             int actualPrice = item.getPrice();
             int discountedPrice = calculateDiscountedPrice(actualPrice, finalDiscount);
-            //This array list stores data which will be displayed on malls system from
-            //where owner will select the items during checkout.
+
             int id = item.getId();
             hashMap.put(id, discountedPrice);
-
-            displayChoiceArray.add(String.format("%-3d| %-15s| %-10s| %-15d| %d", id, brandName, category, finalDiscount, discountedPrice));
         }
+
         return hashMap;
     }
 
@@ -73,17 +64,4 @@ class Selections {
         return ((100 - discount) * price) / 100;
     }
 
-    void showChoices() {
-        String id = "Id";
-        String brand = "Brand";
-        String category = "Category";
-        String discount = "Discount % ";
-        String price = "Price";
-        System.out.println("**************************************************************");
-        System.out.println(String.format("%-3s| %-15s| %-10s| %-15s| %s", id, brand, category, discount, price));
-        System.out.println("**************************************************************");
-        for (String line : displayChoiceArray) {
-            System.out.println(line);
-        }
-    }
 }
