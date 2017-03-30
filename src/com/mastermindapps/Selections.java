@@ -18,24 +18,28 @@ class Selections {
      * @return hashmap of index and price post max discount pair.
      */
     HashMap getSelectionSet() {
-        //This method is called initially to instantiate other classes and populates other global
-        //arrays and sets which this method will call and require.
+        /*
+        loadCollections method is called initially to instantiate classes and collections required by this
+        method.
+         */
         loadCollections();
-        //This map will store Id and final post discount price.
-        HashMap<Integer, Integer> hashMap = new HashMap<>();
-        //Iterating through raw pricing array and parsing operations.
+
+        HashMap<Integer, Integer> hashMap = new HashMap<>();//This map will store Id and final post discount price.
+
         for (Inventory item : pricingArray) {
-            int id = item.getId();
-            String brand = item.getBrandName();
+
+            String brandName = item.getBrandName();
             String category = item.getCategory();
-            //maxDiscount method is called to find out max discount between brand and category
-            int discount = maxDiscount(brand, category);
-            int price = item.getPrice();
-            int finalPrice = discountedPrice(price, discount); //Final price is calculated
+            int finalDiscount = getDiscountMaxFrom(brandName, category);
+
+            int actualPrice = item.getPrice();
+            int discountedPrice = calculateDiscountedPrice(actualPrice, finalDiscount);
             //This array list stores data which will be displayed on malls system from
             //where owner will select the items during checkout.
-            displayChoiceArray.add(String.format("%-3d| %-15s| %-10s| %-15d| %d", id, brand, category, discount, finalPrice));
-            hashMap.put(id, finalPrice);
+            int id = item.getId();
+            hashMap.put(id, discountedPrice);
+
+            displayChoiceArray.add(String.format("%-3d| %-15s| %-10s| %-15d| %d", id, brandName, category, finalDiscount, discountedPrice));
         }
         return hashMap;
     }
@@ -55,7 +59,7 @@ class Selections {
         pricingArray = pricing.getInventoryArray(pricingFile);
     }
 
-    private int maxDiscount(String brand, String category) {
+    private int getDiscountMaxFrom(String brand, String category) {
         int brandDiscount = Integer.valueOf(brandSet.get(brand).toString());
         int categoryDiscount = Integer.valueOf(categorySet.get(category).toString());
         if (brandDiscount > categoryDiscount) {
@@ -65,7 +69,7 @@ class Selections {
         }
     }
 
-    private int discountedPrice(int price, int discount) {
+    private int calculateDiscountedPrice(int price, int discount) {
         return ((100 - discount) * price) / 100;
     }
 
