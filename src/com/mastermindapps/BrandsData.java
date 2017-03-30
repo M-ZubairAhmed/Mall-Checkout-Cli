@@ -5,7 +5,6 @@ import java.util.HashMap;
 
 class BrandsData {
 
-    //Hashmap declared for global scope.
     private HashMap<String, Integer> hashMap = new HashMap<>();
 
     /**
@@ -26,11 +25,11 @@ class BrandsData {
     }
 
     /**
-     * ToDO make this for later
+     * ToDO Ability to add brands and save them in brands csv file.
      *
-     * @param brandName
-     * @param discount
-     * @return
+     * @param brandName brand name
+     * @param discount  discount on the brand
+     * @return boolean value if entry is added or not.
      */
     boolean addBrand(String brandName, int discount) {
         boolean added;

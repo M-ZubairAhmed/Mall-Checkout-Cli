@@ -48,8 +48,8 @@ class CategoriesData {
         while (searchCategory != null) {
             String categoryName = arrayList.get(i).getCategoryName();
             if (searchCategory.equalsIgnoreCase(categoryName)) {
-                searchCategory = arrayList.get(i).getCategoryParent();
-                if (maxDiscount < arrayList.get(i).getDiscount()) {
+                searchCategory = arrayList.get(i).getCategoryParent(); //search key is now the parent of found key.
+                if (maxDiscount < arrayList.get(i).getDiscount()) { //check for discount max in the hierarchy of category
                     maxDiscount = arrayList.get(i).getDiscount();
                 }
                 i = 0;
@@ -58,18 +58,17 @@ class CategoriesData {
                     i = 0;
                 }
             }
-
         }
         return maxDiscount;
     }
 
     /**
-     * TODO add later and patch in main
+     * TODO ability to add categories in program
      *
-     * @param categoryName
-     * @param categoryParent
-     * @param discount
-     * @return
+     * @param categoryName   name of category
+     * @param categoryParent name of parent category
+     * @param discount       discount on the category
+     * @return boolean value if entry is added or not.
      */
     boolean addNewCategory(String categoryName, String categoryParent, int discount) {
         boolean added;

@@ -8,7 +8,7 @@ class InventoryData {
     private ArrayList<Inventory> arrayList = new ArrayList<>();
 
     /**
-     * Parses string[] arraylist of inventory to arraylist of inventory type.
+     * Parses string[] arraylist of inventory to arraylist of inventory data type.
      *
      * @param file String[] arraylist from CSVReader
      * @return arraylist of Inventory datatype
@@ -25,12 +25,13 @@ class InventoryData {
     }
 
     /**
-     * TODO patch this in main
-     * @param id
-     * @param brand
-     * @param category
-     * @param price
-     * @return
+     * TODO add ability to add inventory in program and save file in csv.
+     *
+     * @param id       id of item
+     * @param brand    brand name
+     * @param category category item falls in
+     * @param price    price of item
+     * @return boolean value if item is added into arraylist or not.
      */
 
     boolean addPricing(int id, String brand, String category, int price) {
@@ -40,6 +41,7 @@ class InventoryData {
             added = true;
         } catch (NullPointerException npE) {
             added = false;
+            System.out.println("ERROR! New entry cannot be added.");
         }
         return added;
     }
