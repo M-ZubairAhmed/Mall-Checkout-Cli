@@ -57,7 +57,8 @@ class Choices {
             return Integer.valueOf((finalPriceMap.get(selectedID)).toString());
         }
         catch (NullPointerException npE){
-            System.out.println("ERROR! Please select valid choice");
+            int selectionRange = finalPriceMap.size();
+            System.out.println("ERROR! Please select valid choice from 1 to " + selectionRange);
             return 0;
         }
     }
