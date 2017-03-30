@@ -15,9 +15,8 @@ class CategoriesData {
     HashMap getCategorySet() {
         addStoredCategories();
         HashMap<String, Integer> hashMap = new HashMap<>();
-        for (int i = 0; i < arrayList.size(); i++) {
-            String categoryName = arrayList.get(i).getCategoryName();
-            hashMap.put(categoryName, maxCategoryDiscount(categoryName));
+        for (Categories category : arrayList) {
+            hashMap.put(category.getCategoryName(), maxCategoryDiscount(category.getCategoryName()));
         }
         return hashMap;
     }
