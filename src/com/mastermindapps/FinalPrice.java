@@ -65,7 +65,6 @@ class FinalPrice {
         String id = "Id";
         String brand = "Brand";
         String category = "Category";
-//        String discount = "Discount % ";
         String price = "Price";
         final String DISPLAY_FORMAT = "%-3d| %-15s| %-10s| %d";
         System.out.println("**************************************************************");
