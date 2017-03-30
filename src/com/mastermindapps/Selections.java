@@ -10,17 +10,30 @@ class Selections {
     private ArrayList<Inventory> pricingArray;
     private ArrayList<String> displayChoiceArray = new ArrayList<>();
 
+    /**
+     * This method works calls loadCollection method, which returns populated pricing arraylist.
+     * Populated pricing array list is of raw data from inventory csv. It is them parsed and
+     * in this method.
+     *
+     * @return hashmap of index and price post max discount pair.
+     */
     HashMap getSelectionSet() {
-
+        //This method is called initially to instantiate other classes and populates other global
+        //arrays and sets which this method will call and require.
         loadCollections();
+        //This map will store Id and final post discount price.
         HashMap<Integer, Integer> hashMap = new HashMap<>();
+        //Iterating through raw pricing array and parsing operations.
         for (Inventory item : pricingArray) {
             int id = item.getId();
             String brand = item.getBrandName();
             String category = item.getCategory();
+            //maxDiscount method is called to find out max discount between brand and category
             int discount = maxDiscount(brand, category);
             int price = item.getPrice();
-            int finalPrice = discountedPrice(price, discount);
+            int finalPrice = discountedPrice(price, discount); //Final price is calculated
+            //This array list stores data which will be displayed on malls system from
+            //where owner will select the items during checkout.
             displayChoiceArray.add(String.format("%-3d| %-15s| %-10s| %-15d| %d", id, brand, category, discount, finalPrice));
             hashMap.put(id, finalPrice);
         }
