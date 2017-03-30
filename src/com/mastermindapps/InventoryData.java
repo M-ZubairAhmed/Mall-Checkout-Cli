@@ -24,21 +24,6 @@ class InventoryData {
         return arrayList;
     }
 
-    void displayInventory(){
-        String id = "Id";
-        String brand = "Brand";
-        String category = "Category";
-//        String discount = "Discount % ";
-        String price = "Price";
-        final String DISPLAY_FORMAT = "%-3d| %-15s| %-10s| %d";
-        System.out.println("**************************************************************");
-        System.out.println(String.format("%-3s| %-15s| %-10s| %s", id, brand, category, price));
-        System.out.println("**************************************************************");
-        for (Inventory item : arrayList){
-            System.out.println(String.format(DISPLAY_FORMAT,item.getId(),item.getBrandName(),item.getCategory(),item.getPrice()));
-        }
-    }
-
     /**
      * TODO patch this in main
      * @param id

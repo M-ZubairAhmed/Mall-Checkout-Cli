@@ -7,8 +7,10 @@ public class Main {
 
     public static void main(String[] args) {
         FinalPrice finalPrice = new FinalPrice();
-        HashMap inventorySet = finalPrice.getFinalPrices();
-        finalPrice.displayFinalPriceChoices();
+
+        HashMap finalPriceMap = finalPrice.getFinalPrices();
+
+        finalPrice.displayOriginalPrices();
 
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter number of customers");
@@ -16,7 +18,7 @@ public class Main {
 
         for (int i = 0; i < custNum; i++) {
             System.out.println("Enter choices of customer no. " + (i + 1));
-            int sum = getChoices(inventorySet);
+            int sum = getChoices(finalPriceMap);
             System.out.println(sum);
         }
         scanner.close();

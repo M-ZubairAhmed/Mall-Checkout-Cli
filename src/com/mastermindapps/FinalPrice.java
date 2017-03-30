@@ -24,14 +24,11 @@ class FinalPrice {
             String brandName = item.getBrandName();
             String category = item.getCategory();
             int finalDiscount = getDiscountMaxFrom(brandName, category);
-
             int actualPrice = item.getPrice();
             int discountedPrice = calculateDiscountedPrice(actualPrice, finalDiscount);
-
             int id = item.getId();
             hashMap.put(id, discountedPrice);
         }
-
         return hashMap;
     }
 
@@ -62,6 +59,21 @@ class FinalPrice {
 
     private int calculateDiscountedPrice(int price, int discount) {
         return ((100 - discount) * price) / 100;
+    }
+
+    void displayOriginalPrices(){
+        String id = "Id";
+        String brand = "Brand";
+        String category = "Category";
+//        String discount = "Discount % ";
+        String price = "Price";
+        final String DISPLAY_FORMAT = "%-3d| %-15s| %-10s| %d";
+        System.out.println("**************************************************************");
+        System.out.println(String.format("%-3s| %-15s| %-10s| %s", id, brand, category, price));
+        System.out.println("**************************************************************");
+        for (Inventory item : pricingArray){
+            System.out.println(String.format(DISPLAY_FORMAT,item.getId(),item.getBrandName(),item.getCategory(),item.getPrice()));
+        }
     }
 
 }
