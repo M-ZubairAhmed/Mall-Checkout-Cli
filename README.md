@@ -19,12 +19,13 @@ There are several categories of products. In fact, categories have subcategories
 which themselves can have subcategories. Below is a diagram. Casuals is a
 subcategory of Trousers, which by itself is a subcategory of Men's wear. Some
 categories have discounts.
-
+```
             Men's wear                 Women's wear (50% off)
             |- Shirts                  |- Dresses
             |- Trousers                |- Footwear
             |- Casuals (30% off)
             |- Jeans   (20% off)
+```
 
 Each product you have belongs to a brand which by themselves are running
 discounts. Below is a table that lists them: Brands Discounts: Wrangler 10%
@@ -46,14 +47,11 @@ the customer buys a Jeans of Wrangler Brand, the discounts are:
 3. Discount on parents (Trousers, Men's wear): None So, the discount that is
    applied 20%.
 
-# Inventory (the list of items that shop has):
+### Inventory (the list of items that shop has):
 
-# Id | Brand | Category | Price | Discounted Price |
+![image](https://user-images.githubusercontent.com/17708702/33103366-04c28cec-cf48-11e7-899b-50bb90633b8a.png)
 
-1 | Arrow | Shirts | 800 | 640 | 2 | Vero Moda | Dresses | 1400 | 560 | 3 |
-Provogue | Footwear | 1800 | 900 | 4 | Wrangler | Jeans | 2200 | 1760 | 5 | UCB
-| Shirts | 1500 | 1500 |
-===========================================================
+
 
 You will be given the above table (without discounted price) in CSV form as
 standard input. This is the shop inventory. You'll also get the customer options
